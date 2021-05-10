@@ -56,7 +56,7 @@ STICKERS = (
 @disableable_dec("start")
 @get_strings_dec("pm_menu")
 async def start_group_cmd(message, strings):
-    await message.reply(Avengers ["start_hi_group"])
+    await message.reply(strings["start_hi_group"])
 
 
 @register(cmds="start", no_args=True, only_pm=True)
@@ -131,7 +131,7 @@ async def help_cmd_g(message, strings):
     button = InlineKeyboardMarkup().add(
         InlineKeyboardButton(text=text, url="https://t.me/Avengers_HelperBot?start")
     )
-    await message.reply(Avengers["help_header"], reply_markup=button)
+    await message.reply(strings["help_header"], reply_markup=button)
 
 
 @register(helpmenu_cb.filter(), f="cb", allow_kwargs=True)
