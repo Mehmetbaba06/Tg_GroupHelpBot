@@ -75,7 +75,7 @@ async def get_start_func(message, strings, edit=False):
     buttons.add(
         InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
         InlineKeyboardButton(
-            ["Dev"], url="https://t.me/Akcrazytech"
+            strings["btn_source"], url="https://t.me/Akcrazytech"
         ),
     )
     buttons.add(
