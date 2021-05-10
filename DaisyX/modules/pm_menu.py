@@ -45,16 +45,10 @@ def help_markup(modules):
 
 
 STICKERS = (
-    "CAACAgUAAxkBAAJOGmBeli95P073FKVkgc4esfKE4UlXAAIOAgACyavAVkbLMIidWYdyHgQ",
-    "CAACAgUAAxkBAAJOG2BeljABwlCfwzHT1gzyiciBri6_AAIsAgACXBPBVgpGQRz-1qmlHgQ",
-    "CAACAgUAAxkBAAJOHGBeljOJ35CQNnkpnVcgRoHuJX6DAAL3AQACN8TBVm1PIART01cWHgQ",
-    "CAACAgUAAxkBAAJOHWBeljXW9QzYQ51gpCjHZHCF5Ui6AAJ7AgAC3zDBVo2xenp7JYhAHgQ",
-    "CAACAgUAAxkBAAJOHmBeljjU0_FT_QpdUUJBqVUC0nfJAAKYAgACJ_jBVvntHY_8WF27HgQ",
-    "CAACAgUAAxkBAAJOH2BeljrV68mPLu8_6n4edT20Q3IQAAJ9AgACq3LBVmLuZuNPlvkfHgQ",
-    "CAACAgUAAxkBAAJOIGBeljttuniUPykRtzkSZj3SRwKJAAI7AgACNm_BVp8TCkE6ZqCoHgQ",
-    "CAACAgUAAxkBAAJOIWBelj-P_2vtVqtkF2OMlVN3M0N4AAK3AQACSm3BVkXF2voraS2tHgQ",
-    "CAACAgUAAxkBAAJOImBelkJxUBm2rL1iPfMZfk-_9DaOAALrAgAC4T3BVniopXQVsZ4KHgQ",
-    "CAACAgUAAxkBAAJOI2BelkMO0AX_wtAc7hUZz1NixuMlAAKEAwACY4TAViVuNLTBmmkgHgQ",
+    "CAACAgIAAx0CRZAFewADUGCZEOAIc_BUAaEouMDs0UaeNsTlAAKPBgAC0lqIAQTgD5YigyIFHgQ",
+    "CAACAgIAAx0CRZAFewADUWCZEmXsnDRaLyFYemzFAAEarUcDXgACqAYAAtJaiAEpeo7fFdvo2B4E",
+    "CAACAgIAAx0CRZAFewADUmCZEnObMcaAl9MKDOjlGSzrqBSFAAKpBgAC0lqIAcqUgbqXXs37HgQ",
+    "CAACAgIAAx0CRZAFewADU2CZEnuq_Lo2KUswfAMe4j7GTmwgAAKgBgAC0lqIAe47FNrvGvFpHgQ", 
 )
 
 
@@ -62,7 +56,7 @@ STICKERS = (
 @disableable_dec("start")
 @get_strings_dec("pm_menu")
 async def start_group_cmd(message, strings):
-    await message.reply(strings["start_hi_group"])
+    await message.reply(Avengers ["start_hi_group"])
 
 
 @register(cmds="start", no_args=True, only_pm=True)
@@ -81,7 +75,7 @@ async def get_start_func(message, strings, edit=False):
     buttons.add(
         InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
         InlineKeyboardButton(
-            strings["btn_Dev"], url="https://t.me/Akcrazytech"
+            ["Dev"], url="https://t.me/Akcrazytech"
         ),
     )
     buttons.add(
@@ -137,7 +131,7 @@ async def help_cmd_g(message, strings):
     button = InlineKeyboardMarkup().add(
         InlineKeyboardButton(text=text, url="https://t.me/Avengers_HelperBot?start")
     )
-    await message.reply(strings["help_header"], reply_markup=button)
+    await message.reply(Avengers["help_header"], reply_markup=button)
 
 
 @register(helpmenu_cb.filter(), f="cb", allow_kwargs=True)
