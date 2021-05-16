@@ -1,14 +1,14 @@
 {
-  "name": "DaisyX",
+  "name": "Avengers_Bot",
   "description": "?",
   "keywords": [
     "telegram",
     "Daisy",
     "plugin",
-    "telegram-DaisyX",
+    "telegram-Avengers",
     "fuck-TG"
   ],
-  "repository": "https://github.com/TeamDaisyX/Daisy-x",
+  "repository": "https://github.com/AK-CRAZY-TECH/Avengers",
   "website": "daisyproject.studio",
   "success_url": "t.me/DaisyXUpdates",
   "buildpacks": [
@@ -58,7 +58,7 @@
     },
     "UPSTREAM_REPO_URL": {
       "description": "Only for fork users else don't change",
-      "value": "https://github.com/TeamDaisyX/DaisyX-v2.0",
+      "value": "https://github.com/AK-CRAZY-TECH/Avengers",
       "required": false  
     },
     "API_PORT": {
