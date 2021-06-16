@@ -99,9 +99,13 @@ async def virusscan(event):
             allow_password_protected_files=allow_password_protected_files,
         )
         if api_response.clean_result is True:
-            await gg.edit("Avengers-Bot Say's\nThis file is safe ✔️\nNo virus detected 🐞")
+            await gg.edit(
+                "Avengers-Bot Say's\nThis file is safe ✔️\nNo virus detected 🐞"
+            )
         else:
-            await gg.edit("Avengers-Bot Say's\nThis file is Dangerous ☠️️\nVirus detected 🐞")
+            await gg.edit(
+                "Avengers-Bot Say's\nThis file is Dangerous ☠️️\nVirus detected 🐞"
+            )
         os.remove(virus)
     except Exception as e:
         print(e)

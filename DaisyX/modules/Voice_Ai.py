@@ -116,9 +116,7 @@ async def _(event):
                     res = get(server)
 
                     if "Wolfram Alpha did not understand" in res:
-                        answer = (
-                            "I'm sorry Avengers-Bot's AI system can't undestand your problem"
-                        )
+                        answer = "I'm sorry Avengers-Bot's AI system can't undestand your problem"
                     else:
                         answer = res.text
                     try:
@@ -145,7 +143,9 @@ async def _(event):
                     transcript_response == "Wolfram Alpha did not understand your input"
                 ):
                     try:
-                        answer = "Sorry, Avengers-Bot's AI system can't understand you.."
+                        answer = (
+                            "Sorry, Avengers-Bot's AI system can't understand you.."
+                        )
                         tts = gTTS(answer, tld="com", lang="en")
                         tts.save("results.mp3")
                     except AssertionError:

@@ -48,7 +48,7 @@ STICKERS = (
     "CAACAgIAAx0CRZAFewADUGCZEOAIc_BUAaEouMDs0UaeNsTlAAKPBgAC0lqIAQTgD5YigyIFHgQ",
     "CAACAgIAAx0CRZAFewADUWCZEmXsnDRaLyFYemzFAAEarUcDXgACqAYAAtJaiAEpeo7fFdvo2B4E",
     "CAACAgIAAx0CRZAFewADUmCZEnObMcaAl9MKDOjlGSzrqBSFAAKpBgAC0lqIAcqUgbqXXs37HgQ",
-    "CAACAgIAAx0CRZAFewADU2CZEnuq_Lo2KUswfAMe4j7GTmwgAAKgBgAC0lqIAe47FNrvGvFpHgQ", 
+    "CAACAgIAAx0CRZAFewADU2CZEnuq_Lo2KUswfAMe4j7GTmwgAAKgBgAC0lqIAe47FNrvGvFpHgQ",
 )
 
 
@@ -74,15 +74,13 @@ async def get_start_func(message, strings, edit=False):
     buttons.add(InlineKeyboardButton(strings["btn_help"], callback_data="get_help"))
     buttons.add(
         InlineKeyboardButton(strings["btn_lang"], callback_data="lang_btn"),
-        InlineKeyboardButton(
-            strings["btn_source"], url="https://t.me/Akcrazytech"
-        ),
+        InlineKeyboardButton(strings["btn_source"], url="https://t.me/Akcrazytech"),
     )
     buttons.add(
-        InlineKeyboardButton(strings["btn_channel"], url="https://t.me/AkcrazytechGiveaways"),
         InlineKeyboardButton(
-            strings["btn_group"], url="https://t.me/AKGIVEAWAYSGROUP"
+            strings["btn_channel"], url="https://t.me/AkcrazytechGiveaways"
         ),
+        InlineKeyboardButton(strings["btn_group"], url="https://t.me/AKGIVEAWAYSGROUP"),
     )
     buttons.add(
         InlineKeyboardButton(

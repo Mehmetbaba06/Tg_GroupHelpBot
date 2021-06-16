@@ -67,7 +67,6 @@ async def _(event):
 
         f.write("By @Avengers_Helperbot.")
         f.close()
-        caption = "Join Support @AkcrazytechGiveaways"
 
         await tbot.send_file(
             event.chat_id,
