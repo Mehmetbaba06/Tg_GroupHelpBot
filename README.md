@@ -9,7 +9,7 @@
 
 
 # 🏃‍♂️ Easy Deploy 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AK-CRAZY-TECH/AVENGERS.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mehmetbaba06/Holaxxl/)
 
 [Generate String Session](https://replit.com/@SpEcHiDe/GenerateStringSession)  << Select telethon
 
